@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do list</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <form id="todo-form" action="">
+        <div class="text-inputs">
+            <label for="newTitle">Title</label>
+            <br>
+            <input type="text" id="title" name="newTitle">
+            <br>
+            <label for="description">Description</label>
+            <br>
+            <textarea id="description" name="description" cols="20" rows="10"></textarea>
+        </div>
+        <div class="radio-btns">
+            Priority
+            <br>
+            <input type="radio" id="low" name="priority" value="low">
+            <label for="low">Low</label>
+            <br>
+            <input type="radio" id="medium" name="priority" value="medium">
+            <label for="medium">Medium</label>
+            <br>
+            <input type="radio" id="high" name="priority" value="high">
+            <label for="high">High</label>    
+        </div>
+        <button class="save-btn" type="submit">Save</button>
+        <button class="cancel-btn">Cancel</button>
+    </form>
+    
+    <h1>My Tasks</h1>
+
+    <div id="todo-wrapper"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&Roboto&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+#todo-form {
+    display: flex;
+    flex-wrap: wrap;
+    width: 700px;
+    max-width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+body h1 {
+    margin: 20px auto;
+    width: 700px;
+    max-width: 100%;
+}
+
+#todo-form .text-inputs {
+    width: 50%;
+}
+
+#todo-form .text-inputs #title {
+    width: 80%;
+    box-sizing: border-box;
+    border: 1px solid #727272;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+#todo-form .text-inputs #description {
+    width: 80%;
+    box-sizing: border-box;
+    border: 1px solid #727272;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+#todo-form .radio-btns {
+    width: 50%;
+    line-height: 30px;
+}
+
+.todo-item {
+    background-color: #FBFBFB;
+    padding: 14px 30px;
+    border-radius: 8px;
+    box-shadow: 3px 4px 9px -3px rgba(0, 0, 0, 0.18);
+    cursor: pointer;
+    margin-bottom: 23px;
+    position: relative;
+}
+
+#todo-wrapper {
+    margin: 0 auto;
+    width: 700px;
+    max-width: 100%;
+}
+
+#todo-wrapper .low {
+    background-color: #F7F7F7;
+    border-left: 8px solid #24BB0C;
+} 
+
+#todo-wrapper .medium {
+    background-color: #FCFBE4;
+    border-left: 8px solid #AAA218;
+}
+
+#todo-wrapper .high {
+    background-color: #FFEEEE;
+    border-left: 8px solid #BB2B0C;
+} 
+
+.todo-item .date {
+    color: #595959;
+    font-size: 12px;
+}
+
+.todo-item .delete-btn {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+}
+
+.todo-item .chkbx {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+body h1 {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.todo-item .title {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.todo-item .date {
+    font-size: 12px;
+}
+
+.todo-item .description {
+    font-size: 16px;
+}
+
+.todo-item:hover {
+    box-shadow: 3px 4px 18px -3px rgba(0, 0, 0, 0.31);
+}
+
+.todo-done .title, .todo-done .description {
+    text-decoration: line-through;
+}
+
+.save-btn {
+    color: white;
+    background-color: #0082CB;
+    border: 1px solid #0082CB;
+    border-radius: 8px;
+    text-transform: uppercase;
+    padding: 10px 30px;
+}
+
+.cancel-btn {
+    color: #0082CB;
+    background-color: white;
+    border: 1px solid #0082CB;
+    border-radius: 8px;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+.delete-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
